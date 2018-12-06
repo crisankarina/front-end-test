@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+}
+
+.out-background{
+    width: 1500px;
+    height: 1800px;
+    background-image: url("../pictures/white-blurred-background_1034-249.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.in-background {
+    width: 980px;
+    height: 1161px;
+    background-color: #eff1f1;
+    position: absolute;
+    top: 0%;
+
+}
+
+/* Making the banner */
+
+.banner {
+    background-image: url("https://static.wixstatic.com/media/a68d1a_f559204770d34c829dc53a0d6cfd6717.png");
+    width: 920px;
+    height: 400px; 
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.the {
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Neo Sans";
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 23%;
+}
+
+.plus-container {
+    width: 38px;
+    height: 32px;
+    background-color: #53b8c4;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 30%;
+}
+
+.plus-sign {
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Neo Sans";
+    position: absolute;
+    margin-top: 20%; 
+    margin-left: 20%; 
+    cursor: pointer;
+}
+
+.floor {
+    font-size: 65px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Neo Sans";
+    font-weight: bold;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 3%;
+}
+
+/* Making the navBar */
+
+.navBar-banner {
+    width: 920px;
+    height: 41px;
+    background-color: #53b8c4;
+    margin-left: 30px;
+}
+
+.navBar-banner div{
+    float: right;
+    margin-right: 2%;
+    font-size: 28px;
+    
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Making the LOGO */
+
+
+.logoContainer{
+    margin-top: 8%;
+    text-align: center;
+}
+
+.company-logo {
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: #53b8c4;
+    font-family: "Neo Sans";
+    position: relative;
+}
+
+.logo-shadow {
+    background-color: #050e13;
+    width: 282px;
+    height: 56px;
+    position: absolute;
+}
