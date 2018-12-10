@@ -19,13 +19,15 @@ function onHtmlLoaded(){
     bigButtonsContainer.append(thirdBigButton.createInterfaceObject());
     bigButtonsContainer.append(fourthBigButton.createInterfaceObject());
 
+    
+
     //small buttons
 
     var smallButtonsContainer = document.getElementById("smallButtonsContentId");
 
     var firstSmallButton = new SmallButton("Work about", defaultDesciption);
 
-    var secondSmallButton = new SmallButton("Test text", defaultDesciption);
+    var secondSmallButton = new SmallButton("Test text subject", defaultDesciption);
     
     var thirdSmallButton = new SmallButton("Just a simple", defaultDesciption);
     
@@ -45,7 +47,7 @@ function onHtmlLoaded(){
     smallButtonsContainer.append(thirdSmallButton.createInterfaceObject());
     smallButtonsContainer.append(fourthSmallButton.createInterfaceObject());
 } 
-    viewMoreButton.addEventListener("click", viewMore);
+    // viewMoreButton.addEventListener("click", viewMore);
 }
 
 

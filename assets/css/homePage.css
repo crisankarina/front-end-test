@@ -114,27 +114,222 @@ body {
 }
 
 /* Making the LOGO */
-
-
-.logoContainer{
-    margin-top: 8%;
-    text-align: center;
-}
-
 .company-logo {
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 16px;
     color: #53b8c4;
-    font-family: "Neo Sans";
     position: relative;
+    z-index: 1;
+    margin-top: 10%;
+    text-align: center;
 }
 
 .logo-shadow {
+    box-shadow: 1.5px 2.598px 24px rgba(0,0,0,0.3);
     background-color: #050e13;
     width: 282px;
     height: 56px;
     position: absolute;
+    margin-top: -1.5%;
+    margin-left: 24.6%;
 }
 
 /* Making big buttons */
+#bigButtonsContentId {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+
+.businessElementContainer {
+    flex-basis: 44%;
+    margin-right: 17px;
+
+}
+
+/* number */
+.businessNumber {
+    width: 115px;
+    height: 112px;
+    background-color: #53b8c4;
+    font-size: 48px;
+    letter-spacing: 1px;
+    line-height: 110px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 2px;
+}
+
+/* title */
+.businessTitle {
+    width: 335px;
+    height: 112px;
+    background-color: #ffffff;
+    float: right;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 80px;
+    color: #666666;
+    margin-top: -26%;
+    margin-right: -4.8%;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+/* description */
+.hiddenBusinessDescription {
+    display: none;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    color: #999999;
+    font-family: "Arial";
+    float: right;
+    margin-left: 33%;
+    margin-top: -4%;
+    margin-bottom: 10%;
+}
+
+/* .shownBusinessDescription {
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    color: #999999;
+    font-family: "Arial";
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+} */
+
+/* plus and minus sign */
+.bigPlusClass {
+    position: absolute;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: #53b8c4;
+    margin-left: 42%;
+    margin-top: -8%;
+    cursor: pointer;
+}
+
+.bigMinusClass {
+    display: none;
+    position: absolute;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: #53b8c4;
+    margin-left: 42%;
+    margin-top: -8%;
+    cursor: pointer;
+}
+
+/* Making small buttons */
+#smallButtonsContentId {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.smallElementsContainer {
+    flex-basis: 25%;
+    
+}
+
+.blueBarClass{
+    width: 168px;
+    height: 3px;
+    background-color: #53b8c4;
+    margin-left: 15%;
+}
+
+
+/* title */
+.smallTitleClass {
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #666666;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    margin-bottom: -9px;
+    margin-left: 14%;
+}
+
+/* plus and minus sign */
+.smallPlusClass {
+    position: absolute;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 17%;
+    margin-top: -3.8%;
+    cursor: pointer;
+    width: 38px;
+    height: 37px;
+    background-color: #53b8c4;
+}
+
+.smallMinusClass {
+    display: none;
+    position: absolute;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 3.3%;
+    margin-top: 2%;
+    cursor: pointer;
+    width: 38px;
+    height: 37px;
+    background-color: #53b8c4;
+}
+
+/* information */
+.smallDescriptionBackground {
+    display: none;
+    width: 168px;
+    height: 205px;
+    box-shadow: 5px 8.66px 16px rgba(0,0,0,0.28);
+    background-color: #53b8c4;
+    margin-left: 37px;
+}
+
+.smallDescriptionClass {
+    width: 143px;
+    height: 132px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Arial";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+
+/* view more  */
+#viewMoreId{
+    display: inline-block;
+    width: 142px;
+    height: 18px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    color: #53b8c4;
+    font-family: "Arial";
+    border-bottom: 1px solid #53b8c4;
+}
+
