@@ -42,12 +42,16 @@ function onHtmlLoaded(){
 
     var viewMoreButton = document.getElementById("viewMoreId");
     var viewMore = function(){
-    smallButtonsContainer.append(firstSmallButton.createInterfaceObject());
-    smallButtonsContainer.append(secondSmallButton.createInterfaceObject());
-    smallButtonsContainer.append(thirdSmallButton.createInterfaceObject());
-    smallButtonsContainer.append(fourthSmallButton.createInterfaceObject());
-} 
-    // viewMoreButton.addEventListener("click", viewMore);
+        smallButtonsContainer.append(firstSmallButton.createInterfaceObject());
+        smallButtonsContainer.append(secondSmallButton.createInterfaceObject());
+        smallButtonsContainer.append(thirdSmallButton.createInterfaceObject());
+        smallButtonsContainer.append(fourthSmallButton.createInterfaceObject());
+    } 
+    viewMoreButton.addEventListener("click", viewMore);
+
+    var articleInfo = document.getElementById("articleInfo");
+    articleInfo.innerHTML = defaultDesciption;
+
 }
 
 

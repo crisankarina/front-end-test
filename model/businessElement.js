@@ -108,7 +108,7 @@ SmallButton.prototype.createInterfaceObject = function(){
         plusContainer.style.display = "none";
         minusContainer.style.display = "inline";
         descriptionInformation.style.display = "inline-block";
-        smallDescriptionBackground.style.display = "block";
+        smallDescriptionBackground.style.display = "inline-block";
     }
 
     function hideDescription(){
