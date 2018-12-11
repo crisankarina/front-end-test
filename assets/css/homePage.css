@@ -114,6 +114,19 @@ body {
 }
 
 /* Making the LOGO */
+/* enter logo animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+.logoContainer {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
 .company-logo {
     font-size: 40px;
     letter-spacing: 1px;
@@ -146,7 +159,6 @@ body {
 .businessElementContainer {
     flex-basis: 44%;
     margin-right: 17px;
-
 }
 
 /* number */
@@ -294,11 +306,13 @@ body {
     background-color: #53b8c4;
 }
 
-.smallPlusClass, .smallMinusClass, .bigPlusClass, .bigMinusClass {
+/* chainging color animation */
+.smallPlusClass, .smallMinusClass, .bigPlusClass, .bigMinusClass, .plus-sign, .fa-chevron-left, .fa-chevron-right  {
     transition: color 1s ease-out;
 }
 
-.smallPlusClass:hover, .smallMinusClass:hover, .bigPlusClass:hover, .bigMinusClass:hover {
+.smallPlusClass:hover, .smallMinusClass:hover, .bigPlusClass:hover, .bigMinusClass:hover, .plus-sign:hover,
+.fa-chevron-left:hover, .fa-chevron-right:hover  {
     color: #050e13;
 }
 
@@ -440,7 +454,14 @@ body {
 .readArticleContainer{
     position: absolute;
     margin-left: -8em;
-    margin-top: 8em;
+    margin-top: 7.5em;
+    border-bottom: 1px solid #53b8c4;
+    padding-bottom: 0.5em;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.readArticleContainer:hover{
+    border-bottom: 1px solid #ffffff;
 }
 
 #readArticleId{
@@ -457,3 +478,17 @@ body {
     padding: 10px;
 }
 
+/* article next and prev icon */
+#articleLeftIcon, #articleRightIcon {
+    width: 49px;
+    height: 41px;
+    background-color: #53b8c4;
+    margin-top: 0.45em;
+    margin-right: 0.1em;
+    text-align: center;
+    font-size: 28px;
+}
+
+#articleLeftIcon .fa-chevron-left {
+    margin-top:0.1em
+}
