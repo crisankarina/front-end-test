@@ -39,8 +39,7 @@ BigButton.prototype.createInterfaceObject = function (){
         numberContainer.style.boxShadow = "1.5px 2.598px 24px rgba(0,0,0,0.3)";
         numberContainer.style.backgroundColor = "#050e13";
         titleContainer.style.boxShadow = "1.5px 2.598px 24px rgba(0,0,0,0.3)";
-        
-        // return descriptionContainer;
+    
     }
 
     function hideDescription(){
@@ -51,7 +50,6 @@ BigButton.prototype.createInterfaceObject = function (){
         numberContainer.style.backgroundColor = "#53b8c4";
         titleContainer.style.boxShadow = "none";
 
-        // return descriptionContainer;
     }
 
     var minusContainer = document.createElement("p");
@@ -118,7 +116,6 @@ SmallButton.prototype.createInterfaceObject = function(){
         smallDescriptionBackground.style.display = "none";
     }
 
-
     divContainer.append(titleContainer);
     divContainer.append(plusContainer);
     divContainer.append(minusContainer);
@@ -127,7 +124,6 @@ SmallButton.prototype.createInterfaceObject = function(){
     smallDescriptionBackground.append(descriptionInformation);
 
     divContainer.append(smallDescriptionBackground);
-
 
     return divContainer;
 }

@@ -19,10 +19,7 @@ function onHtmlLoaded(){
     bigButtonsContainer.append(thirdBigButton.createInterfaceObject());
     bigButtonsContainer.append(fourthBigButton.createInterfaceObject());
 
-    
-
     //small buttons
-
     var smallButtonsContainer = document.getElementById("smallButtonsContentId");
 
     var firstSmallButton = new SmallButton("Work about", defaultDesciption);
@@ -39,7 +36,6 @@ function onHtmlLoaded(){
     smallButtonsContainer.append(fourthSmallButton.createInterfaceObject());
 
     // view more button
-
     var viewMoreButton = document.getElementById("viewMoreId");
     var viewMore = function(){
         smallButtonsContainer.append(firstSmallButton.createInterfaceObject());
@@ -52,6 +48,10 @@ function onHtmlLoaded(){
     var articleInfo = document.getElementById("articleInfo");
     articleInfo.innerHTML = defaultDesciption;
 
+    // click on read more on the article
+    $(".readArticleContainer").on("click", function(){
+        window.location = "../template/index.html";
+    })
 }
 
 
