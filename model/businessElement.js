@@ -38,8 +38,8 @@ BigButton.prototype.createInterfaceObject = function (){
         hiddenDescriptionContainer.style.display = "block";
         numberContainer.style.boxShadow = "1.5px 2.598px 24px rgba(0,0,0,0.3)";
         numberContainer.style.backgroundColor = "#050e13";
-        titleContainer.style.boxShadow = "1.5px 2.598px 24px rgba(0,0,0,0.3)";
-    
+        numberContainer.style.textShadow = "1px 1px 2px black, 0 0 25px lightblue, 0 0 5px darkblue";
+        titleContainer.style.boxShadow = "1.5px 2.598px 24px rgba(0,0,0,0.3)"; 
     }
 
     function hideDescription(){
@@ -48,8 +48,8 @@ BigButton.prototype.createInterfaceObject = function (){
         minusContainer.style.display = "none";
         numberContainer.style.boxShadow = "none";
         numberContainer.style.backgroundColor = "#53b8c4";
+        numberContainer.style.textShadow = "none";
         titleContainer.style.boxShadow = "none";
-
     }
 
     var minusContainer = document.createElement("p");

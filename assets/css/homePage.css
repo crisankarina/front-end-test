@@ -6,28 +6,20 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     cursor: default;
-}
-
-.out-background{
-    width: 1500px;
-    height: 1800px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
     background-image: url("../pictures/white-blurred-background_1034-249.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow-x: hidden;
 }
 
 .in-background {
     width: 980px;
     height: 1161px;
     background-color: #eff1f1;
-    position: absolute;
     top: 0%;
-
+    margin: 0 auto;
 }
 
 /* Making the banner */
@@ -49,7 +41,7 @@ body {
     line-height: 16px;
     color: #ffffff;
     position: absolute;
-    margin-top: 25%;
+    margin-top: 9%;
     margin-left: 19%;
 }
 
@@ -58,7 +50,7 @@ body {
     height: 32px;
     background-color: #53b8c4;
     position: absolute;
-    margin-top: 30%;
+    margin-top: 11em;
     margin-left: 27%;
 }
 
@@ -80,20 +72,20 @@ body {
     color: #ffffff;
     font-weight: bold;
     position: absolute;
-    margin-top: 30%;
+    margin-top: 14%;
     margin-left: 3%;
 }
 
 /* Making the login bar */
-.form{
+.loginBar{
     width: 363px;
     height: 41px;
-    margin-left: 34.8em;
+    margin-left: 46.5em;
     background: rgba(220, 223, 220, 0.801);
     
 }
 
-.form p {
+.loginBar p {
     position: absolute;
     font-size: 13px;
     letter-spacing: 0px;
@@ -103,9 +95,100 @@ body {
     padding-left: 2em;
 }
 
-.form p a{
+.loginBar p a{
     color: #ffffff;
     text-decoration: none;
+}
+
+/* login form */
+.form {
+    
+    width: 364px;
+    height: 113px;
+    background-color: #ffffff;
+    margin-left: 46.4em;
+    margin-top: 0.1em;
+}
+
+/* lock simbol */
+.fa-lock {
+    color: #53b8c4;
+    font-size: 60px;
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-left: 0.5em;
+}
+
+/* animation on lock */
+.fa-lock:hover {
+    animation-name: lockSlide;
+    animation-duration: 1s;
+}
+
+@keyframes lockSlide {
+    0%   {margin-left: 0.4em}
+    25%  {margin-left: 0.2em}
+    50%  {margin-left: 0.6em}
+    100% {margin-left: 0.5em}
+  }
+
+/* the two inputs */
+.form-group {
+    margin-top: -5em;
+    margin-left: 7em;
+}
+
+.form-input {
+    padding: 2px; 
+    
+}
+
+.form-input input{
+    width: 200px;
+    height: 25px;
+    background-color: #cccccc;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    color:#ffffff;
+}
+
+::placeholder { 
+    font-size: 11px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Arial";
+    font-weight: bold;
+}
+
+/* Go button */
+.buttonContainer {
+    cursor: pointer;
+    margin-top: -4.8em;
+    margin-left: 24.3em;
+}
+
+.goButton {
+    display: inline-block;
+    width: 61px;
+    height: 55px;
+    background-color: #53b8c4;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Arial";
+    font-weight: bold;
+    border: 1px solid #53b8c4;
+    transition: color 1s ease-out;
+}
+
+.goButton:hover{
+    background-color: #050e13;
+}
+
+#iconButtonForm:hover{
+    color: #ffffff;
 }
 
 /* Making the navBar */
@@ -128,6 +211,7 @@ body {
     color: white;
     padding: 1px;
     cursor: pointer;
+    margin-top: 0.2em;
 }
 
 .clear{
@@ -135,19 +219,6 @@ body {
 }
 
 /* Making the LOGO */
-/* enter logo animation */
-@keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-}
-.logoContainer {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-}
-
 .company-logo {
     font-size: 40px;
     letter-spacing: 1px;
@@ -165,8 +236,21 @@ body {
     width: 282px;
     height: 56px;
     position: absolute;
-    margin-top: -1.8%;
-    margin-left: 24.6%;
+    margin-left: 20.2em;
+    margin-top: -1.5em;
+}
+
+/* enter logo animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+.logoContainer {  
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 /* Making big buttons */
@@ -239,27 +323,19 @@ body {
 } */
 
 /* plus and minus sign */
-.bigPlusClass {
+.bigPlusClass, .bigMinusClass {
     position: absolute;
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 16px;
     color: #53b8c4;
-    margin-left: 42%;
-    margin-top: -8%;
+    margin-left: 31%;
+    margin-top: -5.7%;
     cursor: pointer;
 }
 
 .bigMinusClass {
     display: none;
-    position: absolute;
-    font-size: 40px;
-    letter-spacing: 1px;
-    line-height: 16px;
-    color: #53b8c4;
-    margin-left: 42%;
-    margin-top: -8%;
-    cursor: pointer;
 }
 
 /* Making small buttons */
@@ -291,51 +367,48 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100px;
-    margin-bottom: -9px;
+    margin-bottom: -4px;
     margin-left: 14%;
 }
 
 /* plus and minus sign */
-.smallPlusClass {
+.smallPlusClass, .smallMinusClass{
     position: absolute;
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 35px;
     text-align: center;
     color: #ffffff;
-    margin-left: 17%;
-    margin-top: -3.8%;
     cursor: pointer;
     width: 38px;
     height: 37px;
     background-color: #53b8c4;
+}
+
+.smallPlusClass {
+    margin-left: 12.35%;
+    margin-top: -2.8%;
 }
 
 .smallMinusClass {
     display: none;
-    position: absolute;
-    font-size: 40px;
-    letter-spacing: 1px;
     line-height: 30px;
-    text-align: center;
-    color: #ffffff;
-    margin-left: 3.3%;
-    margin-top: 2%;
-    cursor: pointer;
-    width: 38px;
-    height: 37px;
-    background-color: #53b8c4;
+    margin-left: 2.4%;
+    margin-top: 0.9%;
 }
 
 /* chainging color animation */
-.smallPlusClass, .smallMinusClass, .bigPlusClass, .bigMinusClass, .plus-sign, .fa-chevron-left, .fa-chevron-right,.form p a  {
+.smallPlusClass, .smallMinusClass, .bigPlusClass, .bigMinusClass, .plus-sign, .fa-chevron-left, 
+.fa-chevron-right,.loginBar p a{
     transition: color 1s ease-out;
 }
 
 .smallPlusClass:hover, .smallMinusClass:hover, .bigPlusClass:hover, .bigMinusClass:hover, .plus-sign:hover,
-.fa-chevron-left:hover, .fa-chevron-right:hover, .form p a:hover   {
+.fa-chevron-left:hover, .fa-chevron-right:hover, .loginBar p a:hover {
     color: #050e13;
 }
+
+
 
 /* information */
 .smallDescriptionBackground {
@@ -344,7 +417,7 @@ body {
     height: 205px;
     box-shadow: 5px 8.66px 16px rgba(0,0,0,0.28);
     background-color: #53b8c4;
-    margin-left: 37px;
+    margin-left: 36px;
 }
 
 .smallDescriptionClass {
@@ -410,7 +483,7 @@ body {
     width: 910px;
     height: 184px;
     background-color: #ffffff;
-    margin-top: 5%; 
+    margin-top: 1.7%;
     margin-left: 34px;
 }
 
@@ -492,8 +565,8 @@ body {
 /* read article */
 .readArticleContainer{
     position: absolute;
-    margin-left: -8em;
-    margin-top: 7.5em;
+    margin-left: -10.5em;
+    margin-top: 9.5em;
     border-bottom: 1px solid #53b8c4;
     padding-bottom: 0.5em;
     transition: border-bottom 0.3s ease-in-out;
@@ -523,12 +596,13 @@ body {
     width: 49px;
     height: 41px;
     background-color: #53b8c4;
-    margin-top: 0.45em;
+    margin-top: 0.3em;
     margin-right: 0.1em;
     text-align: center;
     font-size: 28px;
 }
 
 #articleLeftIcon .fa-chevron-left {
-    margin-top:0.1em
+    margin-top: 0.2em;
 }
+
