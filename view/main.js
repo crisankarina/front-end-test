@@ -6,13 +6,13 @@ function onHtmlLoaded(){
 
     var defaultDesciption = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in dui sapien. Nulla ipsum magna, ornare nec diam ut, ullamcorper rhoncus dolor. Curabitur tincidunt sapien ac dignissim semper. Quisque sit amet lacinia ante, nec laoreet lectus. Nullam pharetra sagittis enim, vitae commodo turpis scelerisque et. Integer tempus commodo felis, et porttitor erat pretium eget. Aenean lorem mauris, aliquam in dui vel, sagittis pharetra urna. Quisque eget lorem sit amet est accumsan feugiat nec sed neque. Cras laoreet ipsum diam, sed laoreet purus viverra et. Donec eu nunc vulputate, tincidunt ex sit amet, posuere odio. Duis ac ex bibendum, hendrerit elit in, dignissim velit.";
 
-    var firstBigButton = new BigButton( "01", "Our Services", defaultDesciption);
+    var firstBigButton = new BigButton( "01", "Our Services", defaultDesciption, defaultDesciption);
 
-    var secondBigButton = new BigButton( "02", "Our Rates", defaultDesciption);
+    var secondBigButton = new BigButton( "02", "Our Rates",defaultDesciption, defaultDesciption);
 
-    var thirdBigButton = new BigButton( "03", "Case Studies", defaultDesciption);
+    var thirdBigButton = new BigButton( "03", "Case Studies", defaultDesciption, defaultDesciption);
 
-    var fourthBigButton = new BigButton( "04", "Get a quote", defaultDesciption);
+    var fourthBigButton = new BigButton( "04", "Get a quote", defaultDesciption, defaultDesciption);
 
     bigButtonsContainer.append(firstBigButton.createInterfaceObject());
     bigButtonsContainer.append(secondBigButton.createInterfaceObject());
@@ -52,6 +52,7 @@ function onHtmlLoaded(){
     $(".readArticleContainer").on("click", function(){
         window.location = "../template/index.html";
     })
+
 }
 
 

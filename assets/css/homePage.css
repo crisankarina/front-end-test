@@ -22,26 +22,32 @@ body {
     margin: 0 auto;
 }
 
-/* Making the banner */
+/* slider */
+.slider{
+    position: relative;
+}
 
-.banner {
-    background-image: url("https://static.wixstatic.com/media/a68d1a_f559204770d34c829dc53a0d6cfd6717.png");
+.sliderContainer{
+    position: absolute;
+}
+
+.sliderImg {
     width: 920px;
     height: 400px; 
     background-position: center;
     background-size: cover;
     margin-left: 30px;
     margin-top: 0px;
-    position: relative;
 }
 
+/* Making the banner */
 .the {
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 16px;
     color: #ffffff;
     position: absolute;
-    margin-top: 9%;
+    margin-top: 23%;
     margin-left: 19%;
 }
 
@@ -50,7 +56,7 @@ body {
     height: 32px;
     background-color: #53b8c4;
     position: absolute;
-    margin-top: 11em;
+    margin-top: 22.3em;
     margin-left: 27%;
 }
 
@@ -65,51 +71,51 @@ body {
     cursor: pointer;
 }
 
-.floor {
+.floorOffice {
     font-size: 65px;
     letter-spacing: 1px;
     line-height: 16px;
     color: #ffffff;
     font-weight: bold;
     position: absolute;
-    margin-top: 14%;
+    margin-top: 28%;
     margin-left: 3%;
 }
 
-/* Making the login bar */
+/* LOGIN BAR */
 .loginBar{
     width: 363px;
     height: 41px;
-    margin-left: 46.5em;
-    background: rgba(220, 223, 220, 0.801);
-    
-}
-
-.loginBar p {
+    margin-left: 49em;
+    background: rgba(233, 237, 233, 0.801);
     position: absolute;
+}
+/* login text container*/
+.loginBar p {
     font-size: 13px;
     letter-spacing: 0px;
     line-height: 16px;
     font-family: "Arial";
     font-weight: bold;
     padding-left: 2em;
+    color: #050e13;
+    margin-top: 0.7em;
 }
-
+/* login text */
 .loginBar p a{
     color: #ffffff;
     text-decoration: none;
 }
 
-/* login form */
+/* FORM*/
 .form {
-    
-    width: 364px;
+    position: absolute;
+    width: 362px;
     height: 113px;
     background-color: #ffffff;
-    margin-left: 46.4em;
-    margin-top: 0.1em;
+    margin-left: 49em;
+    margin-top: 3.4em;
 }
-
 /* lock simbol */
 .fa-lock {
     color: #53b8c4;
@@ -118,31 +124,25 @@ body {
     margin-top: 0.4em;
     margin-left: 0.5em;
 }
-
 /* animation on lock */
 .fa-lock:hover {
     animation-name: lockSlide;
     animation-duration: 1s;
 }
-
 @keyframes lockSlide {
     0%   {margin-left: 0.4em}
     25%  {margin-left: 0.2em}
     50%  {margin-left: 0.6em}
     100% {margin-left: 0.5em}
   }
-
 /* the two inputs */
 .form-group {
     margin-top: -5em;
     margin-left: 7em;
 }
-
 .form-input {
     padding: 2px; 
-    
 }
-
 .form-input input{
     width: 200px;
     height: 25px;
@@ -151,7 +151,6 @@ body {
     border: 1px solid #cccccc;
     color:#ffffff;
 }
-
 ::placeholder { 
     font-size: 11px;
     letter-spacing: 0px;
@@ -160,14 +159,12 @@ body {
     font-family: "Arial";
     font-weight: bold;
 }
-
 /* Go button */
 .buttonContainer {
     cursor: pointer;
     margin-top: -4.8em;
     margin-left: 24.3em;
 }
-
 .goButton {
     display: inline-block;
     width: 61px;
@@ -182,54 +179,59 @@ body {
     border: 1px solid #53b8c4;
     transition: color 1s ease-out;
 }
-
+/* button animation */
 .goButton:hover{
     background-color: #050e13;
 }
-
 #iconButtonForm:hover{
     color: #ffffff;
 }
 
-/* Making the navBar */
+/* NAVBAR */
+/* nav container */
 .navBar-banner {
     width: 920px;
     height: 41px;
     background-color: #53b8c4;
     margin-left: 30px;
-    position: relative;
+    margin-top: -0.5em;
 }
-
+/* the two icons container */
 .navBar-banner div{
     float: right;
     margin-right: 2%;
     font-size: 28px;
-    
 }
-
+/* the two icons */
 .fa-chevron-left, .fa-chevron-right {
     color: white;
     padding: 1px;
     cursor: pointer;
     margin-top: 0.2em;
 }
-
+/* clear float */
 .clear{
     clear: both;
 }
 
-/* Making the LOGO */
+/* LOGO */
+/* logo container */
+.logoContainer{
+    margin-top: 43em;
+    position: absolute;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+/* logo text */
 .company-logo {
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 16px;
     color: #53b8c4;
     position: relative;
-    z-index: 1;
-    margin-top: 10%;
-    text-align: center;
+    margin-top: 0%;
+    margin-left: 6.1em;
 }
-
+/* logo shadow */
 .logo-shadow {
     box-shadow: 1.5px 2.598px 24px rgba(0,0,0,0.3);
     background-color: #050e13;
@@ -239,7 +241,6 @@ body {
     margin-left: 20.2em;
     margin-top: -1.5em;
 }
-
 /* enter logo animation */
 @keyframes slideInFromLeft {
     0% {
@@ -249,23 +250,21 @@ body {
       transform: translateX(0);
     }
 }
-.logoContainer {  
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-}
 
-/* Making big buttons */
+/* BIG BUTTONS*/
+/* container with all buttons */
 #bigButtonsContentId {
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 7%;
+    margin-top: 46%;
 }
-
+/* one button container */
 .businessElementContainer {
     flex-basis: 44%;
     margin-right: 17px;
 }
-
 /* number */
 .businessNumber {
     width: 115px;
@@ -279,23 +278,55 @@ body {
     margin-left: 2px;
 }
 
-/* title */
-.businessTitle {
+/* title and description container */
+.titleAndDescriptionContainer{
     width: 335px;
     height: 112px;
     background-color: #ffffff;
-    float: right;
+    margin-top: -12.6em;
+    margin-left: 9.8em;
+    margin-bottom: 2em;
+}
+/* title */
+.businessTitle {
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 80px;
     color: #666666;
-    margin-top: -26%;
-    margin-right: -4.8%;
-    text-align: center;
-    /* vertical-align: text-top; */
+    margin-left: 0.5em;
+}
+.shownBusinessDescription {
+    overflow: hidden;
+    position: relative; 
+    max-height: 3.6em;
+    margin-right: -1em;
+    margin-top: -4.5em;
+    margin-left: 2em;
+    max-width: 270px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: #666666;
+    font-family: "Arial";
+}
+/* create the ... */
+.shownBusinessDescription:before {
+    content: '...';
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+}
+.shownBusinessDescription:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
 }
 
-/* description */
+/* hidden description */
 .hiddenBusinessDescription {
     display: none;
     font-size: 12px;
@@ -309,19 +340,6 @@ body {
     margin-bottom: 10%;
 }
 
-/* .shownBusinessDescription {
-    font-size: 12px;
-    letter-spacing: 0px;
-    line-height: 16px;
-    color: #999999;
-    font-family: "Arial";
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100px;
-} */
-
 /* plus and minus sign */
 .bigPlusClass, .bigMinusClass {
     position: absolute;
@@ -329,8 +347,8 @@ body {
     letter-spacing: 1px;
     line-height: 16px;
     color: #53b8c4;
-    margin-left: 31%;
-    margin-top: -5.7%;
+    margin-left: 35%;
+    margin-top: -7.7%;
     cursor: pointer;
 }
 
