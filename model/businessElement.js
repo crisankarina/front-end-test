@@ -70,8 +70,6 @@ BigButton.prototype.createInterfaceObject = function (){
     titleAndDescriptionContainer.append(minusContainer);
     contentContainer.append(titleAndDescriptionContainer);
     contentContainer.append(hiddenDescriptionContainer);
-    // contentContainer.append(plusContainer);
-    // contentContainer.append(minusContainer);
 
     divContainer.append(numberContainer);
     divContainer.append(contentContainer);
