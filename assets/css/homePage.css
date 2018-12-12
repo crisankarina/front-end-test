@@ -22,15 +22,6 @@ body {
     margin: 0 auto;
 }
 
-/* slider */
-.slider{
-    position: relative;
-}
-
-.sliderContainer{
-    position: absolute;
-}
-
 .sliderImg {
     width: 920px;
     height: 400px; 
@@ -40,46 +31,39 @@ body {
     margin-top: 0px;
 }
 
-/* Making the banner */
+/* BANNER */
 .the {
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 16px;
     color: #ffffff;
-    position: absolute;
-    margin-top: 23%;
-    margin-left: 19%;
+    margin-top: 22%;
+    margin-left: 21%;
 }
-
+/* plus */
 .plus-container {
     width: 38px;
     height: 32px;
     background-color: #53b8c4;
-    position: absolute;
-    margin-top: 22.3em;
-    margin-left: 27%;
+    margin-top: -6.5em;
+    margin-left: 29%;
+    text-align: center
 }
-
-.plus-sign {
-    font-size: 40px;
+.fa-plus {
+    font-size: 30px;
     letter-spacing: 1px;
-    line-height: 16px;
+    line-height: 33px;
     color: #ffffff;
-    position: absolute;
-    margin-top: 18%; 
-    margin-left: 20%; 
-    cursor: pointer;
 }
-
+/* text */
 .floorOffice {
     font-size: 65px;
     letter-spacing: 1px;
     line-height: 16px;
     color: #ffffff;
     font-weight: bold;
-    position: absolute;
-    margin-top: 28%;
-    margin-left: 3%;
+    margin-top: -1%;
+    margin-left: 5%;
 }
 
 /* LOGIN BAR */
@@ -89,6 +73,7 @@ body {
     margin-left: 49em;
     background: rgba(233, 237, 233, 0.801);
     position: absolute;
+    margin-top: -37em;
 }
 /* login text container*/
 .loginBar p {
@@ -105,23 +90,25 @@ body {
 .loginBar p a{
     color: #ffffff;
     text-decoration: none;
+    
 }
 
 /* FORM*/
 .form {
+    display: none;
     position: absolute;
     width: 362px;
-    height: 113px;
+    height: 85px;
     background-color: #ffffff;
     margin-left: 49em;
-    margin-top: 3.4em;
+    margin-top: -33.6em;
 }
 /* lock simbol */
 .fa-lock {
     color: #53b8c4;
     font-size: 60px;
     display: inline-block;
-    margin-top: 0.4em;
+    margin-top: 0.2em;
     margin-left: 0.5em;
 }
 /* animation on lock */
@@ -201,13 +188,14 @@ body {
     float: right;
     margin-right: 2%;
     font-size: 28px;
+    margin-top: 0.15em;
 }
 /* the two icons */
 .fa-chevron-left, .fa-chevron-right {
     color: white;
-    padding: 1px;
+    padding: 4px;
     cursor: pointer;
-    margin-top: 0.2em;
+    margin-top: 0.1em;
 }
 /* clear float */
 .clear{
@@ -217,8 +205,7 @@ body {
 /* LOGO */
 /* logo container */
 .logoContainer{
-    margin-top: 43em;
-    position: absolute;
+    margin-top: 5em;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 /* logo text */
@@ -251,14 +238,18 @@ body {
     }
 }
 
+/* all buttons */
+.allButtonContainer{
+    margin-top: -32em;
+}
 /* BIG BUTTONS*/
 /* container with all buttons */
 #bigButtonsContentId {
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 46%;
+    margin-left: 0.6em;
 }
 /* one button container */
 .businessElementContainer {
@@ -277,7 +268,6 @@ body {
     text-align: center;
     margin-left: 2px;
 }
-
 /* title and description container */
 .titleAndDescriptionContainer{
     width: 335px;
@@ -295,6 +285,7 @@ body {
     color: #666666;
     margin-left: 0.5em;
 }
+/* description */
 .shownBusinessDescription {
     overflow: hidden;
     position: relative; 
@@ -325,7 +316,6 @@ body {
     margin-top: 0.2em;
     background: white;
 }
-
 /* hidden description */
 .hiddenBusinessDescription {
     display: none;
@@ -339,42 +329,39 @@ body {
     margin-top: -4%;
     margin-bottom: 10%;
 }
-
 /* plus and minus sign */
 .bigPlusClass, .bigMinusClass {
-    position: absolute;
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 16px;
     color: #53b8c4;
-    margin-left: 35%;
-    margin-top: -7.7%;
+    margin-left: 88%;
+    margin-top: -21.5%;
     cursor: pointer;
 }
-
 .bigMinusClass {
     display: none;
 }
 
-/* Making small buttons */
+/* SMALL BUTTONS */
+/* small buttons container */
 #smallButtonsContentId {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+/* one small button */
 .smallElementsContainer {
     flex-basis: 25%;
 }
-
+/* blue bar under text */
 .blueBarClass{
     width: 168px;
     height: 3px;
     background-color: #53b8c4;
     margin-left: 15%;
+    margin-top: -17%
 }
-
-
 /* title */
 .smallTitleClass {
     font-size: 25px;
@@ -388,10 +375,8 @@ body {
     margin-bottom: -4px;
     margin-left: 14%;
 }
-
 /* plus and minus sign */
 .smallPlusClass, .smallMinusClass{
-    position: absolute;
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 35px;
@@ -401,31 +386,24 @@ body {
     width: 38px;
     height: 37px;
     background-color: #53b8c4;
+    margin-left: 68%;
+    margin-top: -14.8%;
 }
-
-.smallPlusClass {
-    margin-left: 12.35%;
-    margin-top: -2.8%;
-}
-
 .smallMinusClass {
     display: none;
     line-height: 30px;
-    margin-left: 2.4%;
-    margin-top: 0.9%;
 }
 
 /* chainging color animation */
-.smallPlusClass, .smallMinusClass, .bigPlusClass, .bigMinusClass, .plus-sign, .fa-chevron-left, 
+.smallPlusClass, .smallMinusClass, .bigPlusClass, .bigMinusClass, .fa-plus, .fa-chevron-left, 
 .fa-chevron-right,.loginBar p a{
     transition: color 1s ease-out;
 }
 
-.smallPlusClass:hover, .smallMinusClass:hover, .bigPlusClass:hover, .bigMinusClass:hover, .plus-sign:hover,
+.smallPlusClass:hover, .smallMinusClass:hover, .bigPlusClass:hover, .bigMinusClass:hover, .fa-plus:hover,
 .fa-chevron-left:hover, .fa-chevron-right:hover, .loginBar p a:hover {
     color: #050e13;
 }
-
 
 
 /* information */
@@ -437,22 +415,18 @@ body {
     background-color: #53b8c4;
     margin-left: 36px;
 }
-
 .smallDescriptionClass {
     font-size: 12px;
     letter-spacing: 0px;
     line-height: 16px;
     color: #ffffff;
     font-family: "Arial";
-
     overflow: hidden;
     position: relative; 
     max-height: 11.5em;
     max-width: 15em;
-
     padding: 1em;
 }
-
 /* create the ... */
 .smallDescriptionClass:before {
     content: '...';
@@ -460,7 +434,6 @@ body {
     right: 39px;
     bottom: -2px;
 }
-  
 .smallDescriptionClass:after {
     content: '';
     position: absolute;
@@ -471,7 +444,7 @@ body {
     background: white;
 }
 
-/* view more  */
+/* VIEW MORE */
 #viewMoreId {
     display: block;
     width: 142px;
@@ -491,7 +464,6 @@ body {
     -webkit-transition: width 2s, height 4s; 
     transition: width 1s, height 4s;
 }
-
 #viewMoreId:hover {
     width: 200px;
 }

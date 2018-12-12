@@ -38,7 +38,7 @@ BigButton.prototype.createInterfaceObject = function (){
     //showing hidden description
     function showDescription(){
         plusContainer.style.display = "none";
-        minusContainer.style.display = "inline";
+        minusContainer.style.display = "block";
         hiddenDescriptionContainer.style.display = "block";
         numberContainer.style.boxShadow = "1.5px 2.598px 24px rgba(0,0,0,0.3)";
         numberContainer.style.backgroundColor = "#050e13";
@@ -48,7 +48,7 @@ BigButton.prototype.createInterfaceObject = function (){
     }
     //hiding description
     function hideDescription(){
-        plusContainer.style.display = "inline";
+        plusContainer.style.display = "block";
         hiddenDescriptionContainer.style.display = "none";
         minusContainer.style.display = "none";
         numberContainer.style.boxShadow = "none";
@@ -114,7 +114,7 @@ SmallButton.prototype.createInterfaceObject = function(){
 
     function showDescription(){
         plusContainer.style.display = "none";
-        minusContainer.style.display = "inline";
+        minusContainer.style.display = "block";
         descriptionInformation.style.display = "inline-block";
         smallDescriptionBackground.style.display = "inline-block";
     }

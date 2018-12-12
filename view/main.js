@@ -53,6 +53,19 @@ function onHtmlLoaded(){
         window.location = "../template/index.html";
     })
 
+    //open and close form
+    var submitButton = $("#logInButton"); //a
+    var form = $("form")
+    submitButton.click(function(){
+        form.slideToggle(400);
+    },
+    function(){
+        form.slideToggle(400);
+    })
+
+
+
+
 }
 
 
