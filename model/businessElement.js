@@ -55,7 +55,6 @@ BigButton.prototype.createInterfaceObject = function (){
         numberContainer.style.backgroundColor = "#53b8c4";
         numberContainer.style.textShadow = "none";
         titleAndDescriptionContainer.style.boxShadow = "none";
-
     }
     //minus container
     var minusContainer = document.createElement("p");
@@ -83,54 +82,53 @@ function SmallButton(title, description){
 }
 
 SmallButton.prototype.createInterfaceObject = function(){
+    // container with all
     var divContainer = document.createElement("div");
     divContainer.classList.add("smallElementsContainer");
-
+    // blue bar
     var blueBar = document.createElement("div");
     blueBar.classList.add("blueBarClass")
-
+    // title
     var titleContainer = document.createElement("p");
     titleContainer.classList.add("smallTitleClass");
     titleContainer.innerHTML = this.title;
-
+    // description background
     var smallDescriptionBackground = document.createElement("div");
     smallDescriptionBackground.classList.add("smallDescriptionBackground");
-
+    // description
     var descriptionInformation = document.createElement("p");
     descriptionInformation.classList.add("smallDescriptionClass");
     descriptionInformation.innerHTML = this.description;
-
+    // plus
     var plusContainer = document.createElement("p");
     plusContainer.classList.add("smallPlusClass");
     plusContainer.innerHTML = "+";
     plusContainer.addEventListener("click", showDescription);
-
+    // minus
     var minusContainer = document.createElement("p");
     minusContainer.classList.add("smallMinusClass");
     minusContainer.innerHTML = "-";
     minusContainer.addEventListener("click", hideDescription);
-
+    // showing description
     function showDescription(){
         plusContainer.style.display = "none";
         minusContainer.style.display = "block";
         descriptionInformation.style.display = "inline-block";
         smallDescriptionBackground.style.display = "inline-block";
     }
-
+    // hiding description
     function hideDescription(){
         plusContainer.style.display = "block";
         descriptionInformation.style.display = "none";
         minusContainer.style.display = "none";
         smallDescriptionBackground.style.display = "none";
     }
-
+    // appending all
     divContainer.append(titleContainer);
     divContainer.append(plusContainer);
     divContainer.append(minusContainer);
     divContainer.append(blueBar);
-
     smallDescriptionBackground.append(descriptionInformation);
-
     divContainer.append(smallDescriptionBackground);
 
     return divContainer;

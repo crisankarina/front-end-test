@@ -181,7 +181,6 @@ body {
     height: 41px;
     background-color: #53b8c4;
     margin-left: 30px;
-    margin-top: -0.5em;
 }
 /* the two icons container */
 .navBar-banner div{
@@ -599,10 +598,10 @@ body {
 @media (max-width: 768px) {
     /* LOGIN BAR */
     .loginBar{
-        width: 120%;
+        width: 76.7em;
         height: 46px;
         background-color: #53b8c4;
-        margin-left: 3.8%;
+        margin-left: 2.5em;
     }
     .loginBar p {
         margin-top: 1.7%;
@@ -680,13 +679,9 @@ body {
     }
 
     /* LOGIN */
+    .form{
+        margin-top: -33.3em;
+        margin-left: 2.4em;
+    }
  }
 
- /* @media (max-width: 320px){
-    .loginBar{
-        width: 100%;
-        height: 46px;
-        background-color: #53b8c4;
-        margin-left: 3.8%;
-    }
- } */

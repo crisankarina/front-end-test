@@ -54,29 +54,14 @@ function onHtmlLoaded(){
     })
 
     //open and close form
-    var submitButton = $("#logInButton"); //a
+    var submitButton = $("#logInButton");
     var form = $("form")
     submitButton.click(function(){
-        // $(".in-background").css("background-color", "black");
         form.slideToggle(400);
-        
-        
     },
     function(){
         form.slideToggle(400);
     })
-
-    //changes made when width is 768px
-
-    // (function(){
-    //     var width = screen.width;
-    //     if(width == 768){
-    //         var body = document.querySelector("body");
-    //         body.style.backgroundColor = "#000000";
-    //     }
-    // })
-
-
 }
 
 
